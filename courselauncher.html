@@ -1,0 +1,43 @@
+<!--[if lt IE 9 ]> <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class=""> <!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Course Launcher</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+		<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <meta name="description" content="MetaCompliance Course" />
+		
+		<!-- Javascript includes -->
+		<script type="text/javascript" src="libs/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/compatibilitytest.js"></script>
+		<script>var browserVersion = browserCheck();</script>
+		<script type="text/javascript" src="scorm/SCORM_API_wrapper.js"></script>
+		<script type="text/javascript" src="scorm/scormvar.js"></script>
+		<script type="text/javascript" src="js/string.js"></script>
+		<script type="text/javascript" src="js/sessiontime.js"></script>
+</head>
+
+<body>
+
+<div id = "launcher">	
+	<iframe id="launchframe" name="launchframe" src="" style="position: absolute; height: 100%; width: 100%; border: none; scrolling:no; overflow: hidden" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>	
+</div>
+
+<div id = "errormessage"></div>
+
+<script>
+ 
+	function getLinkURL() {
+		updateVariable("LinkENV", "https://cloud.metacompliance.com");
+		updateVariable("LinkURL", "Q+y7ll+b5wHLszdqtym+K1bG4+6KN8l137YNmSZAG//YpttJ8BYi7VhSRePRQ3R0EWvGqolVEQVwe7j1pX3rx3F+cbXNvUUC8pbGR3RjOdU=");
+		scorm.save();
+	}
+
+ </script>
+ 
+  <script type="text/javascript" src="js/clientapp.js"></script>
+  
+</body>
+</html>
